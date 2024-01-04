@@ -7,7 +7,7 @@ Matematik, fen bilimleri ve okuma alanlarında öğrencilerin problem çözme, e
 Veri seti, 'learningtower' isimli R kütüphanesinden alınmıştır. Çalışmadaki kodlara ait veri setleri 
 'Veri Kaynağı Dosyaları' içinde bulunmaktadır.
 
-Proje, 'pyhton' dili ile hazırlanmıştır. 
+Proje, 'python' dili ile hazırlanmıştır. 
 
 ## Veri Seti
 
