@@ -1,6 +1,7 @@
 # Eğitim Arenasında Türkiye: PISA Performansı Analizi
 
-Bu proje, Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2023-2024 Güz döneminde yürütülen Veri Görselleştirme dersi projesi kapsamında yapılmıştır. PISA (Programme for International Student Assessment - Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından yürütülen ve 15 yaşındaki öğrencilerin bilgi ve becerilerini ölçen dünya çapında bir sınavdır.
+Bu proje, Eskişehir Teknik Üniversitesi İstatistik Bölümü lisans programında 2023-2024 Güz döneminde yürütülen Veri Görselleştirme dersi projesi kapsamında yapılmıştır. 
+PISA (Programme for International Student Assessment - Uluslararası Öğrenci Değerlendirme Programı), OECD tarafından yürütülen ve 15 yaşındaki öğrencilerin bilgi ve becerilerini ölçen dünya çapında bir sınavdır.
 Matematik, fen bilimleri ve okuma alanlarında öğrencilerin problem çözme, eleştirel düşünme ve bilgiye erişim yeteneklerini değerlendirerek ülkeler arasında eğitim performansının karşılaştırılmasını sağlar. Bu sınav, farklı ülkelerin eğitim sistemlerini değerlendirirken öğrenci başarısının analiz edilmesine olanak tanır.
 
 Veri seti, 'learningtower' isimli R kütüphanesinden alınmıştır. Çalışmadaki kodlara ait veri setleri 
@@ -63,7 +64,6 @@ data.head(6)
 
 ```
 
-
 ## Grafikler
 
 ### Grafik 1: Türkiye'de PISA Sınavına Giren Öğrenci Sayısı
@@ -73,7 +73,6 @@ data.head(6)
 
 stu_num = data.groupby(["year","gender"]).size().reset_index()
 stu_num = stu_num.rename(columns={"year":"Yıl", "gender":"Cinsiyet", 0:"Kişi Sayısı"})
-
 
 #Sütun grafik
 
@@ -123,8 +122,7 @@ fig.show()
 
 ```
 
-![]()
-
+![](https://github.com/fatmanurvarlik/PISA_Visualization/blob/main/Grafik/afi%C5%9F_1.png)
 
 Türkiye, PISA sınavlarına 2003 yılı itibariyle katılmaya başlamıştır. Sınava katılacak öğrenciler rastgele seçilmektedir ve gönüllülük ilkesine dayanmaktadır. İlk yıllarda erkek öğrenci sayısının daha fazla olduğu görülürken 2015 ve 2018 yıllarında seçilen öğrencilerin cinsiyet dağılımı nispeten eşitlenmiştir. Sınava katılan kadın öğrenci sayısının da artması ise Türkiye’de eğitime katılan kadın öğrenci sayısının iyileşmesine işaret olarak yorumlanabilir.
 
@@ -199,7 +197,7 @@ fig.update_layout(plot_bgcolor='white')
 fig.show()
 ```
 
-![]()
+![](https://github.com/fatmanurvarlik/PISA_Visualization/blob/main/Grafik/afi%C5%9F_2.png)
 
 PISA sınavları, öğrenin temelde üç alandaki muhakeme yeteneğini ölçmektedir. Sınav türü ve cinsiyet kırılımında durumu incelediğimizde kadın öğrencilerin ‘Matematik’ ve ‘Fen’ sınavlarında daha stabil bir aralıkta performans sergilediği görülmektedir.
 
@@ -260,7 +258,7 @@ fig.show()
 
 ```
 
-![]()
+![](https://github.com/fatmanurvarlik/PISA_Visualization/blob/main/Grafik/afi%C5%9F_3.png)
 
 Grafikte  cinsiyet kırılımında öğrencilerin sınav
 dönemlerine ait performanslarının dağılımları incelenmiştir. 2015'te her iki cinsiyet için de diğer yıllara oranla
@@ -335,9 +333,11 @@ fig.show()
 
 ```
 
-![]()
+![](https://github.com/fatmanurvarlik/PISA_Visualization/blob/main/Grafik/afi%C5%9F_4.png)
 
 Öğrencinin sahip olduğu kitap sayısı ile ‘Okuma’ sınavında sergilemiş olduğu performansa baktığımızda öğrencinin sahip olduğu kitap sayısı arttıkça hem OECD ülkelerindeki öğrencilerin hem de Türkiye’deki öğrencilerin sınavda aldığı puanda artış görülmektedir.
+
+Not: Bu kısımda afişte yer verilen görsellerin açıklamaları bulunmaktadır. 'pisa_edited.ipynb' dosyasında yapılan ek görselleştirme kodlarına da rastlayabilirsiniz.
 
 
 
