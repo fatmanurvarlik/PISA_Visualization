@@ -16,7 +16,9 @@ Veri seti link: https://cran.r-project.org/web/packages/learningtower/index.html
 Learningtower kütüphanesinde temelde 3 adet veri seti bulunmaktadır. 
 
 -Student: Öğrencilerin sınavlarda aldıkları puanları içeren 22 sütunlu veri seti. Öğrencinin anne-baba eğitim durumu, varlık durumu gibi çeşitli bilgileri de barındırmaktadır. Sütunların açıklamaları için yukarıdaki linki inceleyebilirsiniz. 
+
 -School: Sınavların yapıldığı okulların bilgilerini içeren veri seti.
+
 -CountryCode: Ülke kodları ve ülke isimlerini barındıran veri seti.
 
 Bu çalışmada,
